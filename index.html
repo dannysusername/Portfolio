@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css" >
+    <script src="https://kit.fontawesome.com/647fe92b87.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <ul att = "nav-text">
+            <li><img src="images/rocket-cartoon.png"></li>
+            <li>Projects</li>
+            <li>Education</li>
+            <li>Skills</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <nav>
+        <ul att = "nav-text">
+            <li><img src="images/rocket-cartoon.png"></li>
+            <li>Projects</li>
+            <li>Education</li>
+            <li>Skills</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <div class="one">
+            <div class = "section1">
+                <h1 att = "heading">
+                    Nice to meet you
+                </h1>
+                <div att = "body-text" class = "body" >
+                    My name is Daniel Ibarra and this is my portfolio website. 
+                    I am an aspiring software engineer.
+                </div>
+                <div class = "image-wrapper">
+                    <img src = "images/danny-paty-will.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="two">
+            <div class = "program-section">
+                <div class = "image-wrapper">
+                    <img src = "images/computer-animation-image.jpg">
+                </div>
+                <h1 att = "heading">
+                    Program 1
+                </h1>
+                <div att = "body-text" class = "body">
+                    Tracks production life cycle <br>
+                    Tracks materials <br>
+                    Fast and effecient <br>
+                </div>
+                <div class = "tools-images">
+                    <div class = "tool-images-wrapper">
+                        <img src = "images/html-css-js.png">
+                        <img src = "images/java-svg.svg">
+                        <img src = "images/postgresql.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="three">
+            <div class = "program-section">
+                <div class = "image-wrapper">
+                    <img src = "images/computer-2.jpg">
+                </div>
+                <h1 att = "heading">
+                    Program 2
+                </h1>
+                <div att = "body-text" class = "body">
+                    Tracks production life cycle <br>
+                    Tracks materials <br>
+                    Fast and effecient <br>
+                </div>
+                <div class = "tools-images">
+                    <div class = "tool-images-wrapper">
+                        <img src = "images/html-css-js.png">
+                        <img src = "images/java-svg.svg">
+                        <img src = "images/postgresql.png">
+                        <img src = "images/Kubernetes.png">
+                        <img src = "images/npm.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="four">
+            <div class = "section4">
+                <h1 att = "heading">
+                    Florida International University
+                </h1>
+                <div class = "image-wrapper">
+                    <img src = "images/fiu-library.jpg">
+                </div>
+                <div att = "body-text" class = "body">
+                    <p>Bachelor of Science in Computer Science </p>
+                    <p>GPA: 3.7</p>
+                    <p>INIT</p>
+                    <p>Crypto club</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="five">
+            <div class = "section5">
+            
+                <div class = "heading-text">
+                    <h1 att = "heading">
+                        My Skills Analysis
+                    </h1>
+                    <div class = "sup-text" att = "body-text">
+                        <p>Click a tool to learn more.</p>
+                    </div>
+                </div>
+                <div class = "images-grid">
+                    <div class = "image-wrapper">
+                        <img src="images/java-svg.svg" alt="Java logo">
+                    </div>
+                    
+                    <div class = "image-wrapper">
+                        <img src="images/html-css-js.png" alt="Logos of html css and javascript">
+                    </div>
+                    
+                    <div class = "image-wrapper">
+                        <img src="images/React_logo.png" alt="React logo">
+                    </div>
+                    <div class = "image-wrapper">
+                        <img src="images/postgresql.png" alt="Postgresql logo">
+                    </div>                    
+                    
+                    <div class = "image-wrapper">
+                        <img src="images/springboot.png" alt="Spring boot logo">
+                    </div>
+
+                    <div class = "image-wrapper">
+                        <img src="images/angular.png" alt="Angular logo">
+                    </div>
+
+
+                    <div class = "image-wrapper">
+                        <img src="images/Kubernetes.png" alt="Kubernetes logo">
+                    </div>
+
+                    <div class = "image-wrapper">
+                        <img src="images/npm.png" alt="npm logo">
+                    </div>   
+                </div>
+            </div>
+        </div>
+        
+        <div class="seven">
+            <div class = "section7">
+                <div att = "heading">
+                    Contact me
+                </div>
+                <div class = "contact-form">
+                    <form>  <!--This form will send me a message using Twilio so I dont share my personal info -->
+                        <fieldset>
+        
+                            <div class="name-phonenum" >
+                                <div class="credentials" id="username">
+                                    <label for="name"><i class="fa-solid fa-user"></i> </label>
+                                    <input type="text" name="name" placeholder="Your name..." onfocus="addBoxShadow('username')" onblur="removeBoxShadow('username')">
+                                </div>
+                                <div class="credentials" id="phone">
+                                    <label for="phone"><i class="fa-solid fa-phone"></i> </label>
+                                    <input type="tel" name="phone-num" placeholder="Your phone number..." onfocus="addBoxShadow('phone')" onblur="removeBoxShadow('phone')" >
+                                </div>
+                            </div>
+
+                            <div class="messageform-and-socials" >    
+                                <div class="textarea">                  
+                                    <label style="display: block"  for="message"></label>
+                                    <textarea id="message" name="message to Daniel" rows="5" cols="30" placeholder="Type your message here..." onfocus="addBoxShadow('message')" onblur="removeBoxShadow('message')"></textarea>
+                                </div>
+                                <div class="send">
+                                    <button class="send" style="display: block" type="submit" id="message" aria-label="Send">
+                                        <p style="margin: 0px" >Send</p> 
+                                    </button>
+                                </div>
+                            
+                                
+                                <a class="linkedin" href="https://www.linkedin.com/in/danielibarra2020/">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a class="x" href="https://x.com/home">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                                <a class="gmail" href="https://workspace.google.com/intl/en-US/gmail/">
+                                    <i class="fa-brands fa-google"></i>
+                                </a>			  
+                                
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
