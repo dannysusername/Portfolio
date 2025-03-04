@@ -402,6 +402,7 @@ main .five {
 .section5 .heading-text , .section5 p{
   justify-self: center;
   align-self: center;
+  text-align: center;
 }
 
 .section5 [att = "heading"] {
