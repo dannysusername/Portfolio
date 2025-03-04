@@ -40,19 +40,17 @@ main > div {
 
 main > div > div{
   
-  align-self:center;
+  align-self: center;
 
 }
 
-nav {
-  height: 175px;
-  width: 100%;
-}
 
 nav:first-child {
     width: 100%;
     position: fixed;
     z-index: 9999;
+    height: 175px;
+    width: 100%;
     
 }
 
