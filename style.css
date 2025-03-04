@@ -25,7 +25,23 @@ main {
 }
 
 main > div {
-    align-content: center;
+
+
+    /*
+    This line alone centers the content in all the child divs in main, but to work for 
+    safari i have to make each div a display: grid and give it a align-self: center
+
+    align-content: center;*/
+
+    display: grid;
+
+
+}
+
+main > div > div{
+  
+  align-self:center;
+
 }
 
 nav {
