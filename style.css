@@ -44,22 +44,21 @@ main > div > div{
 
 }
 
+a {
+  text-decoration: none;
 
-nav:first-child {
+}
+
+nav {
     width: 100%;
     position: fixed;
-    z-index: 9999;
+    z-index: 9;
     height: 175px;
     width: 100%;
     
 }
 
-a {
-    text-decoration: none;
-
-}
-
-nav:first-child ul{
+nav ul{
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     align-items: center;
@@ -73,16 +72,49 @@ nav:first-child ul{
 
 }
 
-nav:first-child ul li{
+nav ul li{
     font-size: clamp(22px, 12px, 32px);
 
 }
 
+nav ul li:first-child{
+  width: 70%;
+  display: grid;
 
-
-nav:first-child ul li img {
-    height: 77px;
 }
+
+nav ul li img {
+    width: 100%;
+    height: auto;
+    max-height: 77px;
+    max-width: 77px;
+    justify-self: center;
+
+}
+
+nav ul button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  z-index: 10;
+  background: none;
+  gap: 15px;
+  padding: 0;
+  border: none;
+  display: none;
+}
+
+nav ul button span{
+  height: 3px;
+  width: 95%;
+  background: white;
+
+}
+
 
 /*
 div {
@@ -145,6 +177,7 @@ main .one {
     row-gap: 5%;
     margin: 5%;
     height: 45%;
+    max-height: 700px;
 
 }
 
@@ -188,6 +221,7 @@ main .two {
     grid-template-rows: 20% minmax(0, 1fr) minmax(0, 1fr);
     margin: 5%;
     height: 60%;
+    max-height: 700px;
     gap: 5%;
 }
 
@@ -323,7 +357,7 @@ main .three {
 /*Four*/
 
 main .four {
-  background-color: #211c84;
+  background-color: #1e0342;
   width: 100%;
   height: 100%;
 
@@ -335,6 +369,7 @@ main .four {
     grid-template-rows: 30% 70%;
     /*grid-template-rows: repeat(2, minmax(0, 1fr));*/
     height: 80%;
+    max-height: 700px;
     margin: 5%;
     column-gap: 3%;
 
@@ -394,7 +429,9 @@ main .five {
 
 .section5 {
   display: grid;
-  height: 88%;
+  min-height: 200px;
+  max-height: 1501px;
+  height: 1500px;
   grid-template-rows: 15% 85%;
   margin: 5%;
 }
@@ -498,6 +535,7 @@ main .seven {
   display: flex;
   flex-direction: column;
   height: 70%;
+  max-height: 700px;
   width: 80%;
   min-width: 260px;
   gap: 5%;
@@ -522,9 +560,7 @@ main .seven {
   color: #181818;
   font-size: 16px;
   font-weight: normal; 
-  border: 1px solid white;
   border-radius: 20px;
-  
 
 }
 
@@ -689,6 +725,26 @@ main .seven {
 .contact-form fieldset .messageform-and-socials .gmail{
   background-color: #eb4436;
 
+}
+
+@media (max-width: 470px) {
+
+  nav ul li:not(:first-child){
+    display: none;
+  }
+
+  nav ul button {
+    display: flex;
+    grid-column: 5 / 6;
+  }
+
+  nav ul li:first-child{
+    justify-self: end;
+  }
+
+  nav ul button{
+    justify-self: start;
+  }
 }
 
 
