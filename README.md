@@ -15,7 +15,7 @@ Frontend: HTML5, CSS3 (with Flexbox/Grid for layouts), JavaScript (vanilla for i
 
 Usage
 
-View the portfolio project at -----------> https://github.com/dannysusername/Portfolio. <----------
+View the portfolio project at -----------> https://dannysusername.github.io/Portfolio/ <----------
 
 Screenshots
 (Add screenshots of the homepage, projects section, etc.)
