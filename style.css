@@ -15,27 +15,22 @@ body {
 
 main {
     background-color: #1e0342;
-    display: grid;
-    grid-template-rows: repeat(7, 800px);
     color: white;
     width: 100%;
-    height: 100%;
-
-    
+    min-height: 100vh;                    /* Important: full height even if content is short */
+    display: grid;
+    grid-template-rows: repeat(7, 100vh); /* Each slide = one full screen */
+    overflow: hidden;                     /* Prevents any child overflow */
 }
 
 main > div {
-
-
-    /*
-    This line alone centers the content in all the child divs in main, but to work for 
-    safari i have to make each div a display: grid and give it a align-self: center
-
-    align-content: center;*/
-
+    width: 100%;
+    height: 100%;
     display: grid;
-
-
+    place-items: center;                  /* Replaces your old align-self: center trick */
+    padding: 0;
+    margin: 0;
+    overflow: hidden;                     /* Safety net */
 }
 
 main > div > div{
@@ -173,7 +168,7 @@ main .one {
 .one .section1 {
     display: grid;
     grid-template-columns: repeat(2, minmax(0%, 50%));
-    grid-template-rows: repeat(2, minmax(0%, 50%));
+    grid-template-rows: repeat(3, minmax(0%, 50%));
     column-gap: 5%;
     row-gap: 5%;
     margin: 5%;
@@ -198,9 +193,20 @@ main .one {
   grid-row: 2;
 }
 
+.section1 .social-links{
+  display: flex;
+  gap: 15%;
+  margin-top: 5%;
+}
+
+.section1 .social-links i{
+  color: white;
+  font-size: clamp(50px, 10vw, 90px);
+}
+
 .section1 .image-wrapper{
   grid-column: 2;
-  grid-row: 1 / 3;
+  grid-row: 1 / 4;
 }
 
 .section1 img {
@@ -221,7 +227,7 @@ main .two {
 .program-section {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: 20% minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto 1fr auto;
     margin: 5%;
     margin-top: auto;
     margin-bottom: auto;
@@ -231,15 +237,18 @@ main .two {
 }
 
 .program-section .image-wrapper{
+  border-radius: 20px;
+  overflow: hidden;
   grid-column: 1;
   grid-row: 1 / 4;
+ 
   
 }
 
 .program-section .image-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 
 }
 
@@ -254,14 +263,50 @@ main .two {
   grid-column: 2;
   grid-row: 2;
   align-content: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   /*MAXWIDTH? MINWIDTH?*/
 
 }
 
+.button-item {
+    list-style: none;                  /* Removes the bullet */
+    padding: 0;                        /* Removes default list padding */
+    margin: 0;                         /* Removes default margins */
+    display: flex;                     /* Enables centering */
+    justify-content: center;           /* Centers horizontally */
+    align-items: center;               /* Centers vertically (if the row is tall) */
+    height: 100%;                      /* Ensures it fills the grid row height for vertical centering */
+}
+
+.button-link {
+    display: inline-block;          /* Allows padding, margins, and centering */
+    padding: 8px 18px;             /* Makes it feel like a button (adjust as needed) */
+    background-color: #ffffff;      /* White background - stands out on your purple slide */
+    color: #7a73d1;                  /* Text color matching your slide background (#7a73d1) */
+    font-weight: bold;              /* Bold text for emphasis */
+    text-decoration: none;          /* Removes default underline */
+    border-radius: 8px;             /* Rounded corners */
+    border: 2px solid #ffffff;      /* Optional: thin border for definition */
+    transition: all 0.3s ease;      /* Smooth hover effect */
+    cursor: pointer;                /* Hand pointer on hover */
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: #7a73d1;      /* Invert colors on hover */
+    color: #ffffff;                 /* White text on hover */
+    border-color: #ffffff;
+    transform: translateY(-2px);    /* Slight lift effect - optional but cool */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow on hover */
+}
+
 .program-section .tools-images {
   grid-column: 2;
   grid-row: 3;
+  
   align-self: center;
 }
 
@@ -288,15 +333,23 @@ main .two {
 
 .two .program-section .tools-images .tool-images-wrapper img:first-child {
   flex: 1;
-  /*
-  max-width: 100px;
-  */
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.two .program-section .tools-images .tool-images-wrapper img:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .two .program-section .tools-images .tool-images-wrapper img:nth-child(3) {
-  /*
-  max-width: 50px;
-  */
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.two .program-section .tools-images .tool-images-wrapper img:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
 }
 
 /*Three*/
