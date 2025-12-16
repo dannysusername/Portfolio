@@ -17,9 +17,10 @@ main {
     background-color: #1e0342;
     color: white;
     width: 100%;
+    min-height: 100vh;
                         /* Important: full height even if content is short */
     display: grid;
-    grid-template-rows: repeat(7, 700px); /* Each slide = one full screen */
+    grid-template-rows: repeat(7, 100vh); /* Each slide = one full screen */
     overflow: hidden;                     /* Prevents any child overflow */
 }
 
@@ -237,6 +238,7 @@ main .two {
 }
 
 .program-section .image-wrapper{
+  align-self: baseline;
   grid-column: 1;
   grid-row: 2 / 4;
   
@@ -314,9 +316,7 @@ main .two {
 
 .two .program-section .tools-images .tool-images-wrapper {
   display: flex;
-  gap: 10%;
-  max-width: 400px;
-  min-width: 120px;
+  justify-content: space-around;
   
 }
 
