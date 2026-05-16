@@ -3,222 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="style.css" >
+    <meta name="description" content="Daniel Ibarra — aspiring backend software engineer. Portfolio featuring Aviary and Compass.">
+    <meta name="theme-color" content="#1e0342">
+    <title>Daniel Ibarra — Backend Software Engineer</title>
+
+    <link rel="icon" type="image/png" href="images/rocket-cartoon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/647fe92b87.js" crossorigin="anonymous"></script>
-    <title>Document</title>
     <script src="script.js" defer></script>
 </head>
 <body>
 
-    
-
     <nav>
-        <ul att = "nav-text">
-            <li><img src="images/rocket-cartoon.png"></li>
-            <li>Projects</li>
-            <li>Education</li>
-            <li>Skills</li>
-            <li>Contact</li>
-            <button class = "burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+        <a href="#home" class="nav-brand" aria-label="Back to top">
+            <img src="images/rocket-cartoon.png" alt="Daniel Ibarra logo">
+        </a>
+        <ul att="nav-text" class="nav-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
     <main>
-        
-        <div class="one">
-            <div class = "section1">
-                <h1 att = "heading">
+
+        <div class="one" id="home">
+            <div class="section1">
+                <h1 att="heading">
                     Nice to meet you
                 </h1>
-                <div att = "body-text" class = "body" >
-                    My name is Daniel Ibarra and this is my portfolio website. 
+                <div att="body-text" class="body">
+                    My name is Daniel Ibarra and this is my portfolio website.
                     I am an aspiring backend software engineer.
                 </div>
                 <div class="social-links">
-                    <a class="github" href="https://github.com/dannysusername">                              
+                    <a class="github" href="https://github.com/dannysusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a class="linkedin" href="https://www.linkedin.com/in/danielibarra2020/">
+                    <a class="linkedin" href="https://www.linkedin.com/in/danielibarra2020/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
-                    <a class="devpost" href="https://devpost.com/dannibar201?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">
+                    <a class="devpost" href="https://devpost.com/dannibar201?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank" rel="noopener noreferrer" aria-label="Devpost">
                         <i class="fa-brands fa-dev"></i>
                     </a>
                 </div>
-                <div class = "image-wrapper">
-                    <img src = "images/danny-paty-will.jpg">
+                <div class="image-wrapper">
+                    <img src="images/danny-paty-will.jpg" alt="Daniel Ibarra with family">
                 </div>
             </div>
         </div>
 
-        <div class="two">
-            <div class = "program-section">
-                <div class = "image-wrapper">
-                    <img src = "images/AviaryLogo.png">
+        <div class="two" id="projects">
+            <div class="program-section">
+                <div class="image-wrapper">
+                    <img src="images/AviaryLogo.png" alt="Aviary logo">
                 </div>
-                <h1 att = "heading">
+                <h1 att="heading">
                     Aviary
                 </h1>
-                <div att = "body-text" class = "body">
+                <div att="body-text" class="body">
                     <ul>
-                        <li>Web application to help pilots track their flight hours and airplane maintenance</li>
-                        <li>Easily update hours using <strong>built in log book</strong></li>
-                        <li>Track airplane parts with <strong>built in service timeline table</strong></li>
-                        <li>Automatically displays time left until maintenance for each item</li>                            
+                        <li>Web app that helps pilots track flight hours and airplane maintenance</li>
+                        <li>Log hours with a <strong>built-in logbook</strong></li>
+                        <li>Track airplane parts with a <strong>built-in service timeline</strong></li>
+                        <li>Automatically shows the time left until maintenance for each item</li>
                     </ul>
-                    <a href="https://aviarist-d300b0c36379.herokuapp.com/register" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                class="button-link">
-                                Register to Aviary
+                    <a href="https://aviarist-d300b0c36379.herokuapp.com/register"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="button-link">
+                        Register for Aviary
                     </a>
                 </div>
-                <div class = "tools-images">
-                    <div class = "tool-images-wrapper">
-                        <img src = "images/springboot.png">                        
-                        <img src = "images/java-svg.svg">
-                        <img src = "images/postgresql.png">
-                        <img src = "images/html-css-js.png">
+                <div class="tools-images">
+                    <div class="tool-images-wrapper">
+                        <img src="images/springboot.png" alt="Spring Boot">
+                        <img src="images/java-svg.svg" alt="Java">
+                        <img src="images/postgresql.png" alt="PostgreSQL">
+                        <img src="images/html-css-js.png" alt="HTML, CSS and JavaScript">
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="three">
-            <div class = "program-section">
-                <div class = "image-wrapper">
-                    <img src = "images/computer-2.jpg">
+            <div class="program-section">
+                <div class="image-wrapper">
+                    <img src="images/compass-logo.svg" alt="Compass logo">
                 </div>
-                <h1 att = "heading">
-                    Program 2
+                <h1 att="heading">
+                    Compass
                 </h1>
-                <div att = "body-text" class = "body">
-                    Tracks production life cycle <br>
-                    Tracks materials <br>
-                    Fast and effecient <br>
+                <div att="body-text" class="body">
+                    <ul>
+                        <li>Multi-user school task &amp; calendar manager for students</li>
+                        <li>Upload a syllabus PDF and <strong>AI auto-extracts</strong> exams, assignments &amp; deadlines onto your calendar</li>
+                        <li>Add tasks, tags, reminders &amp; recurring to-dos by hand</li>
+                        <li>One <strong>iCal feed</strong> syncs everything to Apple or Google Calendar</li>
+                        <li>Companion Chromium <strong>side-panel extension</strong> with full feature parity</li>
+                    </ul>
+                    <a href="https://dannibar-compass-44cf6055d5e3.herokuapp.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="button-link">
+                        Register for Compass
+                    </a>
                 </div>
-                <div class = "tools-images">
-                    <div class = "tool-images-wrapper">
-                        <img src = "images/html-css-js.png">
-                        <img src = "images/java-svg.svg">
-                        <img src = "images/postgresql.png">
-                        <img src = "images/Kubernetes.png">
-                        <img src = "images/npm.png">
-
+                <div class="tools-images">
+                    <div class="tool-images-wrapper">
+                        <img src="images/python.svg" alt="Python">
+                        <img src="images/fastapi.svg" alt="FastAPI">
+                        <img src="images/postgresql.png" alt="PostgreSQL">
+                        <img src="images/javascript.svg" alt="JavaScript">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="four">
-            <div class = "section4">
-                <h1 att = "heading">
+        <div class="four" id="education">
+            <div class="section4">
+                <h1 att="heading">
                     Florida International University
                 </h1>
-                <div class = "image-wrapper">
-                    <img src = "images/fiu-library.jpg">
+                <div class="image-wrapper">
+                    <img src="images/fiu-library.jpg" alt="FIU library">
                 </div>
-                <div att = "body-text" class = "body">
-                    <p>Bachelor of Science in Computer Science </p>
+                <div att="body-text" class="body">
+                    <p>Bachelor of Science in Computer Science</p>
                     <p>GPA: 3.1</p>
                     <p>INIT Member</p>
                 </div>
             </div>
         </div>
 
-        <div class="five">
-            <div class = "section5">
-            
-                <div class = "heading-text">
-                    <h1 att = "heading">
+        <div class="five" id="skills">
+            <div class="section5">
+
+                <div class="heading-text">
+                    <h1 att="heading">
                         My Skills Analysis
                     </h1>
-                    <div class = "sup-text" att = "body-text">
-                        
+                    <div class="sup-text" att="body-text">
+
                     </div>
                 </div>
-                <div class = "images-grid">
-                    <div class = "image-wrapper">
+                <div class="images-grid">
+                    <div class="image-wrapper">
                         <img src="images/java-svg.svg" alt="Java logo">
                     </div>
-                    
-                    <div class = "image-wrapper">
+
+                    <div class="image-wrapper">
                         <img src="images/html-css-js.png" alt="Logos of html css and javascript">
                     </div>
-                    
-                    <div class = "image-wrapper">
+
+                    <div class="image-wrapper">
                         <img src="images/React_logo.png" alt="React logo">
                     </div>
-                    <div class = "image-wrapper">
+                    <div class="image-wrapper">
                         <img src="images/postgresql.png" alt="Postgresql logo">
-                    </div>                    
-                    
-                    <div class = "image-wrapper">
+                    </div>
+
+                    <div class="image-wrapper">
                         <img src="images/springboot.png" alt="Spring boot logo">
                     </div>
 
-                    <div class = "image-wrapper">
+                    <div class="image-wrapper">
                         <img src="images/angular.png" alt="Angular logo">
                     </div>
 
 
-                    <div class = "image-wrapper">
+                    <div class="image-wrapper">
                         <img src="images/Kubernetes.png" alt="Kubernetes logo">
                     </div>
 
-                    <div class = "image-wrapper">
+                    <div class="image-wrapper">
                         <img src="images/npm.png" alt="npm logo">
-                    </div>   
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <div class="seven">
-            <div class = "section7">
-                <div att = "heading">
+
+        <div class="seven" id="contact">
+            <div class="section7">
+                <div att="heading">
                     Contact me
                 </div>
-                <div class = "contact-form">
+                <div class="contact-form">
                     <form>  <!--This form will send me a message using Twilio so I dont share my personal info -->
                         <fieldset>
-        
-                            <div class="name-phonenum" >
+
+                            <div class="name-phonenum">
                                 <div class="credentials" id="username">
                                     <label for="name"><i class="fa-solid fa-user"></i> </label>
-                                    <input type="text" name="name" placeholder="Your name..." onfocus="addBoxShadow('username')" onblur="removeBoxShadow('username')">
+                                    <input type="text" id="name" name="name" placeholder="Your name..." onfocus="addBoxShadow('username')" onblur="removeBoxShadow('username')">
                                 </div>
                                 <div class="credentials" id="phone">
-                                    <label for="phone"><i class="fa-solid fa-phone"></i> </label>
-                                    <input type="tel" name="phone-num" placeholder="Your phone number..." onfocus="addBoxShadow('phone')" onblur="removeBoxShadow('phone')" >
+                                    <label for="phone-num"><i class="fa-solid fa-phone"></i> </label>
+                                    <input type="tel" id="phone-num" name="phone-num" placeholder="Your phone number..." onfocus="addBoxShadow('phone')" onblur="removeBoxShadow('phone')">
                                 </div>
                             </div>
 
-                            <div class="messageform-and-socials" >    
-                                <div class="textarea">                  
-                                    <label style="display: block"  for="message"></label>
-                                    <textarea id="message" name="message to Daniel" rows="5" cols="30" placeholder="Type your message here..." onfocus="addBoxShadow('message')" onblur="removeBoxShadow('message')"></textarea>
+                            <div class="messageform-and-socials">
+                                <div class="textarea" id="message-wrap">
+                                    <label style="display: block" for="message"></label>
+                                    <textarea id="message" name="message" rows="5" cols="30" placeholder="Type your message here..." onfocus="addBoxShadow('message-wrap')" onblur="removeBoxShadow('message-wrap')"></textarea>
                                 </div>
                                 <div class="send">
-                                    <button class="send" style="display: block" type="submit" id="message" aria-label="Send">
-                                        <p style="margin: 0px" >Send</p> 
+                                    <button class="send" type="submit" aria-label="Send">
+                                        <p style="margin: 0px">Send</p>
                                     </button>
                                 </div>
-                            
-                                
-                                <a class="linkedin" href="https://www.linkedin.com/in/danielibarra2020/">
+
+
+                                <a class="linkedin" href="https://www.linkedin.com/in/danielibarra2020/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
-                                <a class="x" href="https://x.com/home">
+                                <a class="x" href="https://x.com/home" target="_blank" rel="noopener noreferrer" aria-label="X">
                                     <i class="fa-brands fa-x-twitter"></i>
                                 </a>
-                                <a class="gmail" href="https://workspace.google.com/intl/en-US/gmail/">
+                                <a class="gmail" href="https://workspace.google.com/intl/en-US/gmail/" target="_blank" rel="noopener noreferrer" aria-label="Gmail">
                                     <i class="fa-brands fa-google"></i>
-                                </a>			  
-                                
+                                </a>
+
                             </div>
                         </fieldset>
                     </form>
@@ -226,6 +243,6 @@
             </div>
         </div>
     </main>
-    
+
 </body>
 </html>

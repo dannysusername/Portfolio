@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Compass logo">
+  <defs>
+    <linearGradient id="cmp-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5d63d6"/>
+      <stop offset="1" stop-color="#1e0342"/>
+    </linearGradient>
+    <linearGradient id="cmp-ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#c9c4f2"/>
+    </linearGradient>
+    <filter id="cmp-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0d0125" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#cmp-bg)"/>
+  <rect x="16.5" y="16.5" width="479" height="479" rx="111.5" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+
+  <g filter="url(#cmp-shadow)">
+    <circle cx="256" cy="256" r="158" fill="none" stroke="url(#cmp-ring)" stroke-opacity="0.85" stroke-width="6"/>
+    <circle cx="256" cy="256" r="138" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="2"/>
+
+    <!-- cardinal ticks -->
+    <g fill="#ffffff" fill-opacity="0.65">
+      <rect x="252" y="104" width="8" height="26" rx="3"/>
+      <rect x="252" y="382" width="8" height="26" rx="3"/>
+      <rect x="382" y="252" width="26" height="8" rx="3"/>
+      <rect x="104" y="252" width="26" height="8" rx="3"/>
+    </g>
+
+    <!-- compass rose -->
+    <g>
+      <!-- shadowed (right) facets -->
+      <path d="M256 116 L256 256 L292 220 Z" fill="#bdb8ec"/>
+      <path d="M396 256 L256 256 L292 292 Z" fill="#cfcbf2"/>
+      <path d="M256 396 L256 256 L220 292 Z" fill="#bdb8ec"/>
+      <path d="M116 256 L256 256 L220 220 Z" fill="#cfcbf2"/>
+      <!-- lit (left) facets -->
+      <path d="M256 116 L256 256 L220 220 Z" fill="#ffffff"/>
+      <path d="M396 256 L256 256 L292 220 Z" fill="#ffffff"/>
+      <path d="M256 396 L256 256 L292 292 Z" fill="#ffffff"/>
+      <path d="M116 256 L256 256 L220 292 Z" fill="#ffffff"/>
+    </g>
+
+    <circle cx="256" cy="256" r="20" fill="#1e0342"/>
+    <circle cx="256" cy="256" r="20" fill="none" stroke="#ffffff" stroke-width="4"/>
+    <circle cx="256" cy="256" r="6" fill="#ffffff"/>
+  </g>
+</svg>
