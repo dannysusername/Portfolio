@@ -1,6 +1,11 @@
-Portfolio README
-Overview
-This personal portfolio website showcases professional projects, skills, and experience as a software engineer. Designed and prototyped in Figma, then implemented with modern web technologies for a responsive and interactive user experience.
+Hello! My name is Daniel Ibarra I am a student at Florida International University pursuing a Bachelor of Science in Computer Science at Florida International University. My graduation date is August 2027. My main experience is in Java, Spring, PSQL, HTML, CSS & JS. I love building things that are useful for myself and others so I have dabbled in tons of other languages and technologies.
+
+My main focus is to become a backend software engineer with a goal of working at SpaceX because there goal of going to Mars fascinates me. I am specializing in backend web development work using Java, Spring, PSQL and CI/CD. I have built multiple Spring Boot applications and deployed them on the web hosting service called Heroku. 
+
+I enjoy all sorts of outdoor and indoor activities like sailing, hiking and swimming. I like building home automation projects for my family by using Raspberry PI's. 
+
+
+Designed and prototyped in Figma, then implemented with modern web technologies.
 Features
 
 Responsive layout adapting to various screen sizes.
@@ -17,8 +22,6 @@ Usage
 
 View the portfolio project at -----------> https://dannysusername.github.io/Portfolio/ <----------
 
-Screenshots
-(Add screenshots of the homepage, projects section, etc.)
 Contributing
 This is a personal project, but suggestions for improvements are welcome via issues.
 License
